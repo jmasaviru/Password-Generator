@@ -29,3 +29,29 @@ function generatePassword() {
     var minimumUpperCases = "";
     var minimumNumbers = "";
     var minimumSpecialCharacters = "";
+
+  // Generator functions
+  var functionArray = {
+    
+    getLowerCases: function() {
+      return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+    },
+
+    getUpperCases: function() {
+      return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+    },
+    
+    getNumbers: function() {
+      return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+    },
+
+
+    getSpecialCharacters: function() {
+      const specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
+    }
+
+};  
+    
+
+    
