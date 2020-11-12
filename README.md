@@ -9,6 +9,6 @@ The following image demonstrates the application functionality:
 
 ## Links
 
-* Password Generator URL: 
+* Password Generator URL: https://jmasaviru.github.io/Password-Generator/
 
-* Password Generator GitHub repository: 
+* Password Generator GitHub repository: https://github.com/jmasaviru/Password-Generator
