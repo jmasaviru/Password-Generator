@@ -19,4 +19,13 @@ function generatePassword() {
     var upperCases = confirm("Do you want upper cases in your password");
     var numbers = confirm("Do you want numbers in your password?");
     var special = confirm("Do you want special characters in your password?");
-  
+
+    // This is a minimum count for lowerCases, upperCases, numeric and specialCharacters
+    var minimumCount = 0;
+
+    // Empty minimums for numbers, lowerCases, upperCases & specialCharacters
+
+    var minimumLowerCases = "";
+    var minimumUpperCases = "";
+    var minimumNumbers = "";
+    var minimumSpecialCharacters = "";
