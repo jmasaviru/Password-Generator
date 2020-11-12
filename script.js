@@ -52,6 +52,51 @@ function generatePassword() {
     }
 
 };  
-    
 
-    
+    // Checks to make sure user selected ok for all and uses empty minimums from above
+
+    if (numbers === true) {
+        minimumNumbers = functionArray.getNumbers();
+        minimumCount++;
+
+    }
+
+    if (lowerCases === true) {
+        minimumLowerCases = functionArray.getLowerCases();
+        minimumCount++;
+
+    }
+
+    if (upperCases === true) {
+        minimumUpperCases = functionArray.getUpperCases();
+        minimumCount++;
+
+    }
+
+    if (special === true) {
+        minimumSpecialCharacters = functionArray.getSpecialCharacters();
+        minimumCount++;
+
+    }
+
+     // empty string variable for the for loop below
+    var randomPasswordGenerated = "";
+
+    // loop getting random characters
+    for (let i = 0; i < (parseInt(passwordLength) - minimumCount); i++) {
+        var randomNumberPicked = Math.floor(Math.random() * 4);
+
+        randomPasswordGenerated += randomNumberPicked;
+
+  }
+
+  // to make sure characters are added to the password
+  randomPasswordGenerated += minimumNumbers;
+  randomPasswordGenerated += minimumLowerCases;
+  randomPasswordGenerated += minimumUpperCases;
+  randomPasswordGenerated += minimumSpecialCharacters;
+
+
+  return randomPasswordGenerated;
+
+}
